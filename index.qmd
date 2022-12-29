@@ -1,11 +1,7 @@
 ---
-title: "jackagoldman.github.io"
+title: "Jack A. Goldman"
 ---
 
-This is a Quarto website.
+\-\--
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+I am a PhD Student at the Insitute of Forestry and Conservation at the University of Toronto under the supervision of Patrick M.A. James and Marie-Josee Fortin.
