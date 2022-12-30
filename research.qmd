@@ -1,3 +1,6 @@
 ---
 title: "Research"
 ---
+
+I am interested in the ways that climate warming shapes natural disturbance dynamics in the non-moisture limited ecosystems such as the Eastern boreal forest of Canada, with an emphasis on how changes in moisture availability affect wildfire burn severity, insect defoliation and their interactions. Current research trends investigating the effect of climate warming on natural disturbance dynamics focus more on moisture limited ecosystems such as those found in Western North America. In moisture limited ecosystems, where low-moisture availability is common, species have adapted to these conditions. Yet, in humid and non-moisture limited ecosystems of eastern North America, species are adapted to moisture surplus. However, little is known about even small, short term changes to moisture availability in these non-moisture limited ecosystem may alter distubances.
+---
