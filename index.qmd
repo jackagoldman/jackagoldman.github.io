@@ -1,7 +1,27 @@
 ---
 title: "Jack A. Goldman"
+image: jag_fishingJPEG.JPEG
+about: 
+  template: trestles
+  image-shape: rounded
+  image-width: 15em
+  links:
+    - text: ResearchGate
+      href: https://www.researchgate.net/profile/Jack-Goldman-2
+    - text: Twitter
+      href: https://twitter.com/jandrewgoldman
+    - text: GitHub
+      href: https://github.com/jackagoldman
+    - text: Email
+      href: mailto:jack.goldman@mail.utoronto.ca
+---
+# About Me
+
+Currently a PhD Student at the Instiute of Forestry and Conservation at the University of Toronto under the supervision of Patrick M.A. James and Marie-Jos&#233;e Fortin.
+
+I am interested in the ways that climate warming shapes natural disturbance dynamics in the non-moisture limited ecosystems such as the Eastern boreal forest of Canada, with an emphasis on how changes in moisture availability affect wildfire burn severity, insect defoliation and their interactions. Current research trends investigating the effect of climate warming on natural disturbance dynamics focus more on moisture limited ecosystems such as those found in Western North America. In moisture limited ecosystems, where low-moisture availability is common, species have adapted to these conditions. Yet, in humid and non-moisture limited ecosystems of eastern North America, species are adapted to moisture surplus. However, little is known about even small, short term changes to moisture availability in these non-moisture limited ecosystem may alter distubances.
+
+My research leverages large spatial and temporal datasets through remote sensing and other publicly available sources to analyze trends in historical disturbances and tease apart consitituent drivers. Head over to my research page to learn more.
 ---
 
 \-\--
-
-I am a PhD Student at the Insitute of Forestry and Conservation at the University of Toronto under the supervision of Patrick M.A. James and Marie-Josee Fortin.
