@@ -1,6 +1,31 @@
 ---
 title: "About"
 ---
+I am interested in the ways that climate warming shapes natural disturbance dynamics in the non-moisture limited ecosystems such as the Eastern boreal forest of Canada, with an emphasis on how changes in moisture availability affect wildfire burn severity, insect defoliation and their interactions. Current research trends investigating the effect of climate warming on natural disturbance dynamics focus more on moisture limited ecosystems such as those found in Western North America. In moisture limited ecosystems, where low-moisture availability is common, species have adapted to these conditions. Yet, in humid and non-moisture limited ecosystems of eastern North America, species are adapted to moisture surplus. However, little is known about even small, short term changes to moisture availability in these non-moisture limited ecosystem may alter distubances.
 
-# Education
+---
+
+
+### Education
+
+<i class="fas fa-graduation-cap"></i> M.Sc. in Biology (2019) | Concordia University | Montreal, QC, CA
+
+Honours B.Sc. with Distinction in Forest Conservation Science (2017) | Univeristy of Toronto | Toronto, ON, CA
+
+
+---
+
+### Scholarships
+
+Louie J. Nozzolillo Fellowship in Forestry Research (2020-21) | $2,500
+
+Queen Elizabeth II Graduate Scholarship in Science and Technology (2020-21) | Declined
+
+NSERC Postgraduate Scholarship - Doctoral (2020-23) | $63,000
+
+Queen Elizabeth II Graduate Scholarship in Science and Technology (2019-20) | $15,000 
+
+Concordia Graduate Scholarship Natural Sciences and Engineering Research (2018-19) | $17,500
+
+Edward H. Buckley and Grace B. Buckley Undergraduate Scholarship (2017) | $1,000
 ---

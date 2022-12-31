@@ -87,6 +87,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./research.html" aria-current="page">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html">
+ <span class="menu-text">Publications</span></a>
+  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -101,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -120,10 +128,44 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>I am interested in the ways that climate warming shapes natural disturbance dynamics in the non-moisture limited ecosystems such as the Eastern boreal forest of Canada, with an emphasis on how changes in moisture availability affect wildfire burn severity, insect defoliation and their interactions. Current research trends investigating the effect of climate warming on natural disturbance dynamics focus more on moisture limited ecosystems such as those found in Western North America. In moisture limited ecosystems, where low-moisture availability is common, species have adapted to these conditions. Yet, in humid and non-moisture limited ecosystems of eastern North America, species are adapted to moisture surplus. However, little is known about even small, short term changes to moisture availability in these non-moisture limited ecosystem may alter distubances.</p>
+<section id="why-do-we-care-about-wildfire-burn-severity" class="level1">
+<h1>Why do we care about wildfire burn severity?</h1>
+<p>Understanding spatial and temporal variation in burn severity is important because the degree of burn severity constrains post-fire establishment and forest succession. Our results provide a conceptual basis for efforts to understand both how current and future variation in burn severity can be influenced by winter snowfall and to provide input to forest managers to ensure forest ecosystem provisioning under climate warming.</p>
+</section>
+<section id="short-term-vs.-long-term-trends-in-moisture-availability" class="level1">
+<h1>Short-term vs.&nbsp;Long-term trends in moisture availability</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figure1_StudyArea.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Study Area within the Western Boreal Shield of Ontario</figcaption><p></p>
+</figure>
+</div>
+<p>Climate warming is expected to increase wildfire intensity by creating conditions that are more conducive high-severity severity burning events. Rising temperatures across the boreal forest often coincide with reductions in both winter and summer precipitation that result in a water shortage. A growing concern is that a reduction in moisture availability at over short-time periods (i.e., monthly timescale) increases the availability and flammability of fuel and hence high probability of severe burning events. Yet across multiple years, the temporal cumulative water shortage deficit can limit tree growth and consequently fuel availability that ultimately decrease wildfire severity. Under climate change, how the variability in temporal moisture availability will affect wildfire intensity is uncertain. Here, we examine the variability on burn severity events in Ontario’s boreal forest according to near-term trends in moisture availability using remotely sensed burn data of burn severity (median and extreme) and climate data from 1986-2020. To compare the relative influence of two separate measures of antecedent moisture availability (Climate Moisture Index; CMI, Relative Humidity; RH) at monthly and yearly timescales on trends in burn severity, we use a stochastic gradient boosted regression tree approach. We found that short-term moisture dynamics have a greater influence on burn severity patterns, indicating that patterns of burn severity may be driven more by fuel moisture than fuel availability. Time-lags that represented moisture availability in the winter months were the most influential followed by spring related moisture availability, suggesting that changes to snow phenology and winter conditions may be important drivers of wildfire burn severity.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="Figure3_Percent_Influence_Temporal.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Relative influence explained by Short vs.&nbsp;long-term moisture</figcaption><p></p>
+</figure>
+</div>
+<hr>
+</section>
+<section id="the-impacts-of-snow-cover-on-wildfire-burn-severity-in-the-boreal-forest" class="level1 page-columns page-full">
+<h1>The impacts of snow cover on wildfire burn severity in the boreal forest</h1>
+<p>In humid boreal forest ecosystems, moisture variability is important to wildfire burn severity - the ecological impacts of fire on vegetation and soil. Moisture in the boreal forest is mainly driven by precipitation that falls as snow and the long duration of snow cover due to cold winter temperatures. Consequently, there is a strong link between the timing and consequences of wildfire and winter snow cover. Climate warming is reducing snow-water storage, driving earlier snowmelt, and lengthening summer drought and the duration of the fire season. Despite the potential importance of changes in snow cover to summer moisture regimes and fire activity, the relationship between snow cover and wildfire burn severity under these climate induced changes is uncertain. Using remotely sensed wildfire burn severity maps and snow cover maps from the MODIS snow cover product generated in Google Earth Engine, we ask</p>
+<ol type="1">
+<li><p>How has snow cover variability (snow cover frequency (SCF), snow disappearance date (SDD)) influenced wildfire burn severity?</p></li>
+<li><p>How does spatial scale influence this relationship?</p></li>
+<li><p>Does the magnitude of the relationship between snow cover variability and burn severity vary between water limited and non-water limited ecoregions?</p></li>
+</ol>
+<p><img src="flowchartchap2.png" class="img-fluid"></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Figure 1. Proposed causal relationships between snow phenology (blue), fire characteristics (red), forest characteristics (green) and climate (coral)</p>
+</div></div><p>Higher snow cover frequency (SCF) means higher snow water equivalent and therefore later melt-out date. High snow cover frequency will also have indirect effects on the amount of snow melt and subsequent spring moisture availability. We predict that higher SCF and later melt-out date (SDD) will increase moisture availability and reduce wildfire burn severity, and as SCF decrease and SDD becomes earlier, wildfire burn severity will increase. However, the relationship between snow phenology and wildfire burn severity is conditional on the availability of live fuel, day of burn and atmospheric aridity. Because fuels respond difference based on species composition</p>
 <hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
