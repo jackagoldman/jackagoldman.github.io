@@ -1,8 +1,9 @@
+
 ---
 title: "Jack A. Goldman"
 image: jag_fishingJPEG.JPEG
 about: 
-  template: solana
+  template: trestles
   image-shape: rounded
   links:
     - text: ResearchGate
@@ -13,11 +14,24 @@ about:
       href: https://github.com/jackagoldman
     - text: Email
       href: mailto:jack.goldman@mail.utoronto.ca
+  
 ---
+---
+title-block-banner: burnt3.jpg
+title-block-banner-color: black
+title: Disturbance Ecology | Environmental Data Science | Climate Change
+margin-block-end: 1rem
+position: relative
+margin-top: -30px
+height: 100%
+
+---
+
+
 
 # Welcome!
 
-I am a interdisciplinary disturbance ecologist interested in environmental data science and the ways we quantify, think about and understand abiotic and biotic disturbances in forest ecosystems. I am currently a PhD Student at the [Instiute of Forestry and Conservation](https://academic.daniels.utoronto.ca/forestry/) at the University of Toronto under the supervision of [Patrick M.A. James](http://www.jameslab.ca) and [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/).
+I am a disturbance ecologist interested in environmental data science and the ways we quantify, think about and understand abiotic and biotic disturbances in forest ecosystems. I am currently a PhD Student at the [Instiute of Forestry and Conservation](https://academic.daniels.utoronto.ca/forestry/) at the University of Toronto under the supervision of [Patrick M.A. James](http://www.jameslab.ca) and [Marie-Josée Fortin](https://fortin.eeb.utoronto.ca/).
 
 My research leverages large spatial and temporal datasets through remote sensing and other publicly available sources to understand the causes and consequences of spatial and temporal variation in wildfire burn severity. Head over to my [research](research.qmd) page to learn more.
 
@@ -25,6 +39,6 @@ My research leverages large spatial and temporal datasets through remote sensing
 
 ## Recent News
 
-## New paper out in **Forests**! We show that for some species in Western North America, climate change was beneficial to growth patterns primarily at the northernmost extent of these species' ranges. However, these results also highlight the spatio-temporal complexity of growth response to recent glocal climate change. [Link](https://www.mdpi.com/1999-4907/13/5/738#)
+New paper out in **Forests**! We show that for some species in Western North America, climate change was beneficial to growth patterns primarily at the northernmost extent of these species' ranges. However, these results also highlight the spatio-temporal complexity of growth response to recent glocal climate change. [Link](https://www.mdpi.com/1999-4907/13/5/738#)
 
 \-\--

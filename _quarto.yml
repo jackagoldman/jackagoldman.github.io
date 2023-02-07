@@ -14,8 +14,9 @@ website:
 
 format:
   html:
-    theme: United
+    theme: quartz
     css: styles.css
+    toc: true  
 
 editor: visual
 
