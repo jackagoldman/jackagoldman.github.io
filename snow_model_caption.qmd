@@ -1,0 +1,31 @@
+---
+title: "Causal Relationships caption"
+format: png
+---
+
+```{mermaid}
+%% this makes grey text go away
+%%{init: {'themeVariables': { 'edgeLabelBackground': 'transparent'}}}%%
+
+%% Legend
+flowchart LR
+    Y:::className ---|Snow Cover| Z
+    Z:::className1 ---|Fire Characteristics| W
+    W:::className2 ---|Fuel Complexes| X
+    X:::className3 ---|Climate|null  
+linkStyle 0,1,2,3 stroke:#0000,stroke-width:0px;
+
+classDef hide fill:#0000,stroke:#0000,stroke-width:0px,color:#0000;
+  class legend,null hide;
+  classDef hide-font color:#0000;
+  class Y,Z,W,X hide-font;
+
+classDef Snow Cover
+classDef Fire Characteristic
+%% define class names for colours
+classDef className fill:#c6e2ff,stroke:#333,stroke-width:4px
+classDef className1 fill:#ff6666,stroke:#333,stroke-width:4px
+classDef className2 fill:#bada55,stroke:#333,stroke-width:4px
+classDef className3 fill:#ffdab9,stroke:#333,stroke-width:4px
+
+```

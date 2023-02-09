@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I received my M.Sc. in Biology at Concordia Unversity, where I worked with [Dr. Grant E. Brown](https://sites.google.com/site/brownlabhome/home?authuser=0). During my M.Sc, I used laboratory experiments to examine role of [disturbance cues](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1487), a source of chemical information used by prey fishes to warn other individuals of potential threats.
+I received my M.Sc. in Biology at Concordia Unversity, where I worked with [Dr. Grant E. Brown](https://sites.google.com/site/brownlabhome/home?authuser=0). During my M.Sc, I used laboratory experiments to examine role of [disturbance cues](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecm.1487), a source of chemical information used by prey fishes to warn other individuals of potential threats.
 
 ------------------------------------------------------------------------
 

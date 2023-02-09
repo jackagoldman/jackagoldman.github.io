@@ -14,9 +14,9 @@ website:
 
 format:
   html:
-    theme: quartz
+    theme: superhero
     css: styles.css
-    toc: true  
+    toc: true
 
 editor: visual
 

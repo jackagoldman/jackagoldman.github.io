@@ -12,11 +12,11 @@ My on-going work covers three general themes:
 -   Insect defoliator and wildfire interactions
 -   Snow cover dynamics and disturbance severity
 
-#### Why do we care about wildfire burn severity?
+### Why do we care about wildfire burn severity?
 
 Understanding spatial and temporal variation in burn severity is important because the degree of burn severity constrains post-fire establishment and forest succession. Our results provide a conceptual basis for efforts to understand both how current and future variation in burn severity can be influenced by winter snowfall and to provide input to forest managers to ensure forest ecosystem provisioning under climate warming.
 
-#### Climate drivers of wildfire severity
+### Climate drivers of wildfire severity
 
 ![**Study Area within the Western Boreal Shield of Ontario**](Figure1_StudyArea.jpg)
 
@@ -24,7 +24,7 @@ Climate warming is expected to increase wildfire intensity by creating condition
 
 ![Relative influence explained by Short vs. long-term moisture](Figure3_Percent_Influence_Temporal.jpg){fig-align="left"}
 
-#### Snow Cover Dynamics and wildfire severity
+### Snow Cover Dynamics and wildfire severity
 
 In humid boreal forest ecosystems, moisture variability is important to wildfire burn severity - the ecological impacts of fire on vegetation and soil. Moisture in the boreal forest is mainly driven by precipitation that falls as snow and the long duration of snow cover due to cold winter temperatures. Consequently, there is a strong link between the timing and consequences of wildfire and winter snow cover. Climate warming is reducing snow-water storage, driving earlier snowmelt, and lengthening summer drought and the duration of the fire season. Despite the potential importance of changes in snow cover to summer moisture regimes and fire activity, the relationship between snow cover and wildfire burn severity under these climate induced changes is uncertain. Using remotely sensed wildfire burn severity maps and snow cover maps from the MODIS snow cover product generated in Google Earth Engine, we ask
 
