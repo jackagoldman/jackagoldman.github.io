@@ -15,6 +15,7 @@ website:
 format:
   html:
     theme: superhero
+    default-image-extension: jpeg
     css: styles.css
     toc: true
 

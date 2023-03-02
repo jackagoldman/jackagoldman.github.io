@@ -26,18 +26,19 @@ Climate warming is expected to increase wildfire intensity by creating condition
 
 ### Snow Cover Dynamics and wildfire severity
 
-In humid boreal forest ecosystems, moisture variability is important to wildfire burn severity - the ecological impacts of fire on vegetation and soil. Moisture in the boreal forest is mainly driven by precipitation that falls as snow and the long duration of snow cover due to cold winter temperatures. Consequently, there is a strong link between the timing and consequences of wildfire and winter snow cover. Climate warming is reducing snow-water storage, driving earlier snowmelt, and lengthening summer drought and the duration of the fire season. Despite the potential importance of changes in snow cover to summer moisture regimes and fire activity, the relationship between snow cover and wildfire burn severity under these climate induced changes is uncertain. Using remotely sensed wildfire burn severity maps and snow cover maps from the MODIS snow cover product generated in Google Earth Engine, we ask
+Certain parameters from wildfire behaviour models are regularly applied when modelling wildfire burn severity. The drought code (DC) is a measure of the moisture content in deep, organic soils and it is part of the Canadian Forest Fire Weather Index (FWI) System. The FWI system is used by forest managers across the boreal forest and globally to help predict wildfire behaviour. DC is modelled using an initial startup value following snowmelt which is a baseline assigned to an ecosystem based on expert knowledge, regardless of prior conditions. However, in parts of the boreal forest there are overwintering effects of drought. Preceding fall drought conditions and winter precipitation influence spring DC and wildfire activity. Therefore, when modelling wildfire burn severity using DC we might be underestimating changes in fuel moisture, especially for spring fires. 
 
-1)  How has snow cover variability (snow cover frequency (SCF), snow disappearance date (SDD)) influenced wildfire burn severity?
+Climate warming is projected to cause earlier snowmelt and reductions in snow cover extent and snow water equivalent. Since the boreal forest experiences a long snow-covered season and most of the annual precipitation falls as snow, we hypothesize that snow cover dynamics should play a prominent role in models of wildfire burn severity. Yet, no study has explicitly modelled the link between snow cover dynamics and wildfire burn severity. I am interested in the following:
 
-2)  How does spatial scale influence this relationship?
+1)	Does the inclusion of snow cover dynamics improve models of wildfire burn    severity?
+2)	Are the effects of snow cover dynamics direct or indirect?
+3)	Does the relationship vary across spatial scales and throughout a fire season?
 
-3)  Does the magnitude of the relationship between snow cover variability and burn severity vary between water limited and non-water limited ecoregions?
 
-![](flowchartchap2.png)
+![](flowchartchap2.jpg)
 
 ::: column-margin
 Figure 1. Proposed causal relationships between snow phenology (blue), fire characteristics (red), forest characteristics (green) and climate (coral)
 :::
 
-Higher snow cover frequency (SCF) means higher snow water equivalent and therefore later melt-out date. High snow cover frequency will also have indirect effects on the amount of snow melt and subsequent spring moisture availability. We predict that higher SCF and later melt-out date (SDD) will increase moisture availability and reduce wildfire burn severity, and as SCF decrease and SDD becomes earlier, wildfire burn severity will increase. However, the relationship between snow phenology and wildfire burn severity is conditional on the availability of live fuel, day of burn and atmospheric aridity. Because fuels respond difference based on species composition ---
+
