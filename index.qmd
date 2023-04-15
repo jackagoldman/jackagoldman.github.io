@@ -1,4 +1,3 @@
-
 ---
 title: "Jack A. Goldman"
 image: jag_fishingJPEG.JPEG
@@ -14,8 +13,8 @@ about:
       href: https://github.com/jackagoldman
     - text: Email
       href: mailto:jack.goldman@mail.utoronto.ca
-  
 ---
+
 ---
 title-block-banner: burnt3.jpg
 title-block-banner-color: black
@@ -24,10 +23,7 @@ margin-block-end: 1rem
 position: relative
 margin-top: -30px
 height: 100%
-
 ---
-
-
 
 # Welcome!
 
@@ -39,6 +35,10 @@ My research leverages large spatial and temporal datasets through remote sensing
 
 ## Recent News
 
-New paper out in **Forests**! We show that for some species in Western North America, climate change was beneficial to growth patterns primarily at the northernmost extent of these species' ranges. However, these results also highlight the spatio-temporal complexity of growth response to recent glocal climate change. [Link](https://www.mdpi.com/1999-4907/13/5/738#)
+I recently presented some work on **the effects of snowmelt timing on wildfire burn severity in the boreal forest** at the annual meeting for the North American chapter of IALE in Riverside, USA.
+
+\--
+
+New paper out in **Forests**! We show that for some species in Western North America, climate change was beneficial to growth patterns primarily at the northernmost extent of these species' ranges. These results also highlight the spatio-temporal complexity of growth response to recent global climate change. [Link](https://www.mdpi.com/1999-4907/13/5/738#)
 
 \-\--
