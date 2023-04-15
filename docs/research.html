@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#why-do-we-care-about-wildfire-burn-severity" id="toc-why-do-we-care-about-wildfire-burn-severity" class="nav-link" data-scroll-target="#why-do-we-care-about-wildfire-burn-severity">Why do we care about wildfire burn severity?</a></li>
   <li><a href="#climate-drivers-of-wildfire-severity" id="toc-climate-drivers-of-wildfire-severity" class="nav-link" data-scroll-target="#climate-drivers-of-wildfire-severity">Climate drivers of wildfire severity</a></li>
-  <li><a href="#snow-cover-dynamics-and-wildfire-severity" id="toc-snow-cover-dynamics-and-wildfire-severity" class="nav-link" data-scroll-target="#snow-cover-dynamics-and-wildfire-severity">Snow Cover Dynamics and wildfire severity</a></li>
+  <li><a href="#snow-cover-dynamics-and-wildfire-severity" id="toc-snow-cover-dynamics-and-wildfire-severity" class="nav-link" data-scroll-target="#snow-cover-dynamics-and-wildfire-severity">Snow cover dynamics and wildfire severity</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -141,16 +141,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1 page-columns page-full">
 <h1>Overview</h1>
-<p>My research focuses on the cool-temperate ecosystems of the boreal forest of Canada. With climate warming these ecosystems are largely forgotten compared to western North America, and the ways that climate warming shapes natural disturbance dynamics in these non-moisture limited ecosystems remain uncertain. I incorporate methods from different fields to answer my research questions, including remote sensing, spatial and temporal modelling, structural equation modelling to machine learning.</p>
+<p>My research focuses on the cool-temperate ecosystems of the boreal forest of Canada. With climate warming these ecosystems are largely forgotten compared to western North America, and the ways that climate warming shapes natural disturbance dynamics in these ecosystems remain uncertain. I incorporate methods from different fields to answer my research questions, including remote sensing, spatial and temporal modelling, structural equation modelling and machine learning.</p>
 <p>My on-going work covers three general themes:</p>
 <ul>
-<li>Climate drivers of Wildfire Severity</li>
+<li>Climate drivers of wildfire severity</li>
 <li>Insect defoliator and wildfire interactions</li>
 <li>Snow cover dynamics and disturbance severity</li>
 </ul>
 <section id="why-do-we-care-about-wildfire-burn-severity" class="level3">
 <h3 class="anchored" data-anchor-id="why-do-we-care-about-wildfire-burn-severity">Why do we care about wildfire burn severity?</h3>
-<p>Understanding spatial and temporal variation in burn severity is important because the degree of burn severity constrains post-fire establishment and forest succession. Our results provide a conceptual basis for efforts to understand both how current and future variation in burn severity can be influenced by winter snowfall and to provide input to forest managers to ensure forest ecosystem provisioning under climate warming.</p>
+<p>Wildfire severity – changes in vegetation and soil following a wildfire – is an ecosystem's response to wildfire that has both ecological and societal impacts. Wildfire severity captures the change in ecosystem structure and function following a wildfire and directly affects ecosystem services such as succession, water quality, timber volume, soil fertility, climate regulation, food and water provision, and biodiversity. Fire and forest managers rely on knowledge about the drivers of wildfire severity to implement management strategies in targeted areas to reduce the costs associated with the loss of ecosystem services. Of particular concern to fire and forest managers are how the spatial and temporal legacies of environmental controls on wildfire will influence wildfire severity and, if so, will severity increase or decrease, and what spatial and temporal patterns in the environment are most important for wildfire severity.</p>
 </section>
 <section id="climate-drivers-of-wildfire-severity" class="level3">
 <h3 class="anchored" data-anchor-id="climate-drivers-of-wildfire-severity">Climate drivers of wildfire severity</h3>
@@ -160,7 +160,9 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption"><strong>Study Area within the Western Boreal Shield of Ontario</strong></figcaption><p></p>
 </figure>
 </div>
-<p>Climate warming is expected to increase wildfire intensity by creating conditions that are more conducive high-severity severity burning events. Rising temperatures across the boreal forest often coincide with reductions in both winter and summer precipitation that result in a water shortage. A growing concern is that a reduction in moisture availability at over short-time periods (i.e., monthly timescale) increases the availability and flammability of fuel and hence high probability of severe burning events. Yet across multiple years, the temporal cumulative water shortage deficit can limit tree growth and consequently fuel availability that ultimately decrease wildfire severity. Under climate change, how the variability in temporal moisture availability will affect wildfire intensity is uncertain. Here, we examine the variability on burn severity events in Ontario’s boreal forest according to near-term trends in moisture availability using remotely sensed burn data of burn severity (median and extreme) and climate data from 1986-2020. To compare the relative influence of two separate measures of antecedent moisture availability (Climate Moisture Index; CMI, Relative Humidity; RH) at monthly and yearly timescales on trends in burn severity, we use a stochastic gradient boosted regression tree approach. We found that short-term moisture dynamics have a greater influence on burn severity patterns, indicating that patterns of burn severity may be driven more by fuel moisture than fuel availability. Time-lags that represented moisture availability in the winter months were the most influential followed by spring related moisture availability, suggesting that changes to snow phenology and winter conditions may be important drivers of wildfire burn severity.</p>
+<p>Over the last century, wildfires across the boreal forest have become larger and more intense. These trends are expected to continue under future climate projections, with longer fire seasons, more extreme droughts, and more frequent interactions with other disturbances. We know little about how climate change will impact wildfire severity in the eastern boreal forests of North America and what that will mean for resilience.</p>
+<p>One of the challenges in forecasting burn severity under climate change is the temporal variabiliity inherent to climate and weather. Yet, how measurements of climate and weather at different time lags will influence models of fire behaviour is unclear. I am interested in the sensitivity of burn severity to moisture availability at different time-lags. Understanding at what time lag wildfire burn severity is most sensitive to changes in moisture availability will help build more accurate projections of wildfire severity under climate change and help managers conserve ecosystem services.</p>
+<p>I have shown that burn severity is most sensitive to moisture availability at short (intra-annual, monthly) time-lags in the managed forests of the Ontario boreal shield. At that winter and spring relative humidity is an important indicator for both median and extreme wildfire severity during the fire season.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
 <p><img src="Figure3_Percent_Influence_Temporal.jpg" class="img-fluid figure-img"></p>
@@ -169,15 +171,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="snow-cover-dynamics-and-wildfire-severity" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="snow-cover-dynamics-and-wildfire-severity">Snow Cover Dynamics and wildfire severity</h3>
-<p>Certain parameters from wildfire behaviour models are regularly applied when modelling wildfire burn severity. The drought code (DC) is a measure of the moisture content in deep, organic soils and it is part of the Canadian Forest Fire Weather Index (FWI) System. The FWI system is used by forest managers across the boreal forest and globally to help predict wildfire behaviour. DC is modelled using an initial startup value following snowmelt which is a baseline assigned to an ecosystem based on expert knowledge, regardless of prior conditions. However, in parts of the boreal forest there are overwintering effects of drought. Preceding fall drought conditions and winter precipitation influence spring DC and wildfire activity. Therefore, when modelling wildfire burn severity using DC we might be underestimating changes in fuel moisture, especially for spring fires.</p>
-<p>Climate warming is projected to cause earlier snowmelt and reductions in snow cover extent and snow water equivalent. Since the boreal forest experiences a long snow-covered season and most of the annual precipitation falls as snow, we hypothesize that snow cover dynamics should play a prominent role in models of wildfire burn severity. Yet, no study has explicitly modelled the link between snow cover dynamics and wildfire burn severity. I am interested in the following:</p>
+<h3 class="anchored" data-anchor-id="snow-cover-dynamics-and-wildfire-severity">Snow cover dynamics and wildfire severity</h3>
+<p>Climate warming is projected to cause earlier snowmelt and reduction in snow cover duration. Since the boreal forest experiences a long snow-covered season and most of the annual precipitation falls as snow snow cover dynamics may play a prominent role in models of wildfire burn severity. Yet, no study has explicitly modelled the link between snow cover dynamics and wildfire burn severity. I am interested in the following:</p>
 <ol type="1">
 <li>Does the inclusion of snow cover dynamics improve models of wildfire burn severity?</li>
 <li>Are the effects of snow cover dynamics direct or indirect?</li>
 <li>Does the relationship vary across spatial scales and throughout a fire season?</li>
 </ol>
-<p><img src="flowchartchap2.jpg" class="img-fluid"></p>
+<p><img src="flowchartchap2.png" class="img-fluid"></p>
 
 
 
