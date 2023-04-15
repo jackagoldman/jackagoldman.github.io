@@ -36,7 +36,7 @@ Climate warming is projected to cause earlier snowmelt and reduction in snow cov
 2)  Are the effects of snow cover dynamics direct or indirect?
 3)  Does the relationship vary across spatial scales and throughout a fire season?
 
-![](flowchartchap2.jpg)
+![](flowchartchap2.png)
 
 ::: column-margin
 Figure 1. Proposed causal relationships between snow phenology (blue), fire characteristics (red), forest characteristics (green) and climate (coral)
