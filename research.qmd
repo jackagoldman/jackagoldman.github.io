@@ -29,7 +29,7 @@ I have shown that burn severity is most sensitive to moisture availability at sh
 
 ### Snow cover dynamics and wildfire severity
 
-Climate warming is projected to cause earlier snowmelt and reduction in snow cover duration. Since the boreal forest experiences a long snow-covered season and most of the annual precipitation falls as snow snow cover dynamics may play a prominent role in models of wildfire burn severity. Yet, no study has explicitly modelled the link between snow cover dynamics and wildfire burn severity. I am interested in the following:
+Climate warming is projected to cause earlier snowmelt and reduction in snow cover duration. Since the boreal forest experiences a long snow-covered season and most of the annual precipitation falls as snow snow cover dynamics may play a prominent role in models of wildfire burn severity. Yet, no study has explicitly modeled the link between snow cover dynamics and wildfire burn severity. I am interested in the following:
 
 1)  Does the inclusion of snow cover dynamics improve models of wildfire burn severity?
 2)  Are the effects of snow cover dynamics direct or indirect?
