@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I received my M.Sc. in Biology from Concordia Unversity, where I worked with [Grant E. Brown](https://sites.google.com/site/brownlabhome/home?authuser=0). During my M.Sc, I used laboratory experiments to examine the role of [disturbance cues](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecm.1487), a source of chemical information used by prey fishes to warn other individuals of potential threats.
+I received my M.Sc. in Biology from Concordia Unversity, where I worked with [Grant E. Brown](https://sites.google.com/site/brownlabhome/home?authuser=0). During my M.Sc, I used laboratory experiments to examine the role of [disturbance cues](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecm.1487), a source of chemical information used by prey fishes to warn other individuals of potential threats. I did my undergraduate studies at the University of Toronto in forest conservation science, where I conducted independent research projects with Jay R. Malcolm which was supported with an NSERC USRA and Martin Krkosek.
 
 ------------------------------------------------------------------------
 
