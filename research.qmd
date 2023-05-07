@@ -18,25 +18,24 @@ Wildfire severity -- changes in vegetation and soil following a wildfire -- is a
 
 ### Climate drivers of wildfire severity
 
-![**Study Area within the Western Boreal Shield of Ontario**](Figure1_StudyArea.jpg)
-
 Over the last century, wildfires across the boreal forest have become larger and more intense. These trends are expected to continue under future climate projections, with longer fire seasons, more extreme droughts, and more frequent interactions with other disturbances. We know little about how climate change will impact wildfire severity in the eastern boreal forests of North America and what that will mean for resilience.
 
 One of the challenges in forecasting burn severity under climate change is the temporal variabiliity inherent to climate and weather. Yet, how measurements of climate and weather at different time lags will influence models of fire behaviour is unclear. Part of my PhD thesis focuses on the sensitivity of burn severity to moisture availability at different time-lags. Understanding at what time lag wildfire burn severity is most sensitive to changes in moisture availability will help build more accurate projections of wildfire severity under climate change and help managers conserve ecosystem services.
 
 I have shown that burn severity is most sensitive to moisture availability at short (intra-annual, monthly) time-lags in the managed forests of the Ontario boreal shield. At that winter and spring relative humidity is an important indicator for both median and extreme wildfire severity during the fire season.
 
-
 ### Snow cover dynamics and wildfire severity
 
-Climate warming is projected to cause earlier snowmelt and reduction in snow cover duration. Since the boreal forest experiences a long snow-covered season and most of the annual precipitation falls as snow snow cover dynamics may play a prominent role in models of wildfire burn severity. Yet, no study has explicitly modelled the link between snow cover dynamics and wildfire burn severity. I am interested in the following:
+The boreal forest experiences a long snow-covered period and most of the wildfires burn in areas that are snow-covered for most of the year.Earlier snowmelt, decreased snowpack and earlier spring moisture amounts are associated with longer warm season droughts, with implications for the moisture availability, and fire severity in both spring and summer. Since wildfire behaviour is driven by three factors, weather, topography and fuels, changes in snow covery dynamics can have significant consequence on wildfire severity under global change.
 
-1)  Does the inclusion of snow cover dynamics improve models of wildfire burn severity?
-2)  Are the effects of snow cover dynamics direct or indirect?
-3)  Does the relationship vary across spatial scales and throughout a fire season?
+Despite the potential importance of changes in snow cover to wildfire severity, the direct and indirect effects of snow cover and forest structural diversity, and the interaction between these two factors on wildfire burn severity remain unclear and to the best of our knowledge have yet to be examined. A central focus of my PhD is how snow cover dynamics influence patterns of burn severity.
 
-![](flowchartchap2.png)
+As climate warming increases across the globe, and especially at northern latitudes, it is imperative to understand how future changes in snow cover interact with stand-scale forest structure to influence wildfire burn severity. Such information can inform forest management strategies for reducing the impacts of snow cover loss through structural management regimes. 
+
+
+
+![](dag-forest-snow-fire-interaction.png)
 
 ::: column-margin
-Figure 1. Proposed causal relationships between snow phenology (blue), fire characteristics (red), forest characteristics (green) and climate (coral)
+Figure 1. Proposed causal relationships between forest structure, snow cover dynamics, topograhy, drought and burn severity
 :::
