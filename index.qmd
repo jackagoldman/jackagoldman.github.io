@@ -35,7 +35,7 @@ My research leverages large spatial and temporal datasets through remote sensing
 
 ## Recent News
 
-I was lucky to spend a week learning about structural equation modelling with applications in ecology and observational data from Dr. Bill Shipley at the University of Sherbrooke. I will be writing a blog post soon about my experience - stay tuned!
+I was lucky to spend a week learning about structural equation modelling with applications in ecology from Dr. Bill Shipley at the University of Sherbrooke. I will be writing a blog post soon about my experience - stay tuned!
 
 \--
 
