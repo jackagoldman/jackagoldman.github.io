@@ -1,6 +1,6 @@
 ---
 title: "Jack A. Goldman"
-image: jag_fishingJPEG.JPEG
+image: content/jag_fishingJPEG.JPEG
 about: 
   template: trestles
   image-shape: rounded
@@ -16,7 +16,7 @@ about:
 ---
 
 ---
-title-block-banner: burnt3.jpg
+title-block-banner: content/burnt3.jpg
 title-block-banner-color: "#E25825"
 title: Disturbance Ecology | Environmental Data Science | Climate Change
 margin-block-end: 1rem
