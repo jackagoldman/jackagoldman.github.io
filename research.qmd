@@ -36,7 +36,7 @@ Q1. How does forest structure and snow cove dynamics interact to influence wildf
 Q2. do the strength of the direct and indirect relationships  differ based on ecoregion and fire seasonality?
 Q3. Are snow cover dynamics related to within fire variability in burn severity?
 
-![](dag-forest-snow-fire-interaction.png)
+![](content/dag-forest-snow-fire-interaction.png)
 
 ::: column-margin
 Figure 1. Proposed causal relationships between forest structure, snow cover dynamics, topograhy, drought and burn severity
