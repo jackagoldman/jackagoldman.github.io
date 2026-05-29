@@ -18,7 +18,7 @@ about:
 ---
 title-block-banner: content/burnt3.jpg
 title-block-banner-color: "#E25825"
-title: Disturbance Ecology | Environmental Data Science | Climate Change
+title: 
 margin-block-end: 1rem
 position: relative
 margin-top: -30px
