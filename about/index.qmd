@@ -9,17 +9,3 @@ My path to disturbance ecology began in aquatic systems, where I developed a fou
 I completed my PhD at the University of Toronto under the supervision of Dr. Marie-Josée Fortin and Dr. Patrick James, where I investigated how biotic and abiotic environmental variability shapes wildfire burn severity in Ontario's boreal forest. My dissertation examined how moisture regimes, snow dynamics, forest structure, and insect defoliation (specifically spruce budworm outbreaks) interact across space and time to drive fire outcomes and post-fire recovery. This work revealed that wildfire severity is governed by multi-scale, time-lagged interactions among climate, forest composition, and disturbance history, with important implications for forest management and resilience under climate change.
 
 My current research builds on this foundation, expanding toward cross-ecosystem disturbance interactions and the downstream consequences of wildfire on river systems and fish communities. I am also actively developing methods to scale fine-resolution forest monitoring from airborne lidar up to coarse, large-scale satellite-based approaches, making rigorous ecological inference accessible across vast and data-sparse landscapes.
-
-------------------------------------------------------------------------
-
-### Education
-
-Ph.D in Forestry (2026) \| University of Toronto \| Toronto, ON, CA
-
-<i class="fas fa-graduation-cap"></i> M.Sc. in Biology (2019) \| Concordia University \| Montreal, QC, CA
-
-Honours B.Sc. with Distinction in Forest Conservation Science (2017) \| University of Toronto \| Toronto, ON, CA
-
-------------------------------------------------------------------------
-
-###
