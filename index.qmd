@@ -18,7 +18,7 @@ about:
 ---
 title-block-banner: content/burnt3.jpg
 title-block-banner-color: "#E25825"
-title: 
+#title: 
 margin-block-end: 1rem
 position: relative
 margin-top: -30px
@@ -29,6 +29,6 @@ height: 100%
 
 I am a quantitative ecologist with expertise in remote sensing and big data, focused on monitoring natural disturbance, ecosystem dynamics, and cross-ecosystem disturbance interactions. I develop and apply computational and spatial analytical tools to track landscape change at scale, uncovering the drivers and consequences of disturbance across ecosystems.
 
-Currently, I am a postdoctoral research fellow in the Geomatics Spatio-Temporal Analysis & Remote Sensing Lab @ Carleton University.
+Currently, I am a postdoctoral research fellow in the Geomatics Spatio-Temporal Analysis & Remote Sensing Lab \@ Carleton University.
 
 ------------------------------------------------------------------------

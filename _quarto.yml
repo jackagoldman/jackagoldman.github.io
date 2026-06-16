@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
 
 website:
   title: "Jack A. Goldman"
@@ -9,6 +12,8 @@ website:
       - href: index.qmd
         text: Home
       - about/index.qmd
+      - href: cv/goldman_cv.pdf
+        text: CV
       - research/index.qmd
       - publications/index.qmd
 
