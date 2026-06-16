@@ -1,0 +1,215 @@
+---
+name: Jack A. Goldman
+email: "jackgoldman@cunet.carleton.ca"
+www: "jackagoldman.github.io"
+github: "jackagoldman"
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::hyndman:
+    keep_tex: false
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(dplyr)
+
+source("R/functions.R")
+```
+
+# Current Position
+
+```{r current, results='asis'}
+
+tribble(
+  ~Role, ~Institution, ~Supervisor, ~Year,
+  "Postdoctoral Research Fellow", "Carleton University", "Supervisor: Millard K" ,  "2026--"
+)|>
+  baretable()
+```
+
+# Work Experience
+
+```{r work, results='asis'}
+
+tribble(
+  ~Role, ~Institution, ~Supervisor, ~Year,
+  "Research Associate", "Carleton University", "Supervisor: Millard K" ,  "2025--2026",
+   
+)|>
+  baretable()
+```
+
+# Education
+
+```{r education, results='asis'}
+
+tribble(
+  ~Degree       , ~Institution                       , ~Year ,
+  "Ph.D"        , "University of Toronto"            , "2020--2026",
+   ""           , "Supervisor: Fortin M-J, James PMA", "",
+  "M.Sc."       , "Concordia University"             , "2017--2019",
+   ""           , "Supervisor: Brown GE", "",
+  "B.Sc (Hons)" , "University of Toronto"            , "2013--2017" ,
+   ""           , "Supervisor: Malcolm JR", ""
+
+) |>
+  baretable()
+```
+
+# Publications
+
+## In Preparation
+
+```{r pub-inprep, results='asis'}
+tribble(
+ ~number,  ~citation,
+"", "Millard K, Pelletier N, Thompson DK, Goldman JA*, Pontone N, Guindon L. Severe droughts are putting Canadian peatland carbon stocks at risk: an analysis of fire selectivity and behavior in peatlands over the extreme 2023 fire season.",
+"", "Wilkinson SL, Leverkus S, Goldman JA, Butchart C, Flannigan M. Multi-year overwintering fires in Boreal Canada." ,  
+"", "Wilkinson SL, Goldman JA*, Krieger-Pottruff E, James PMA. Legacies of mountain pine beetle defoliation influences burn severity in western Canada",
+"", "Goldman JA*. The impact of spruce budworm defoliation legacies on wildfire burn severity and post-fire recovery."
+) |>
+  brief_entries(
+    what = citation,
+    when = number
+  )
+```
+
+## In Review
+
+```{r pub-inreview, results='asis'}
+tribble(
+~number, ~citation,
+ "" , "Goldman JA*, Fortin MJ, James PMA. Within and among year moisture availability influences wildfire burn severity in the boreal forest. Fire Ecology."
+) |>
+  brief_entries(
+    what = citation,
+    when = number
+  )
+```
+
+## Published
+
+```{r pub-published}
+tribble(
+  ~number, ~citation,
+  "7.", "Goldman JA*, Fortin MJ, James PMA. 2025. Snow dynamics and forest structure interact to increase wildfire burn severity in the boreal forest. Forest Ecology and Management.",
+  "6.", "Messaoud Y, Reid A, Tchebakova NM, Goldman JA*, & Hofgaard A. 2022. The historical complexity of tree height growth dynamic associated with climate change in western north america. Forests, 13(5): 738.",
+  "5.", "Crane AL, Bairos-Novak KR, Goldman JA*, Brown GE. 2022. Chemical disturbance cues in aquatic systems: a review and prospectus. Ecological Monographs, 92(1): e01487.",
+  "4.", "Goldman JA*, Crane AL, Feyten LEA, Collins E, Brown GE. 2022. Disturbance cue communication is shaped by emitter diet and receiver background risk in Trinidadian guppies. Current Zoology, 68(4): 433–440.",
+  "3.", "Brown GE, Demers EM, **Goldman JA*, Singh A, Chivers DP, Ferrari MCO. 2020. Unpredictable risk enhances induced neophobia in northern red-bellied dace. Animal Behaviour, 168: 121–127.",
+  "2.", "Goldman JA*, Desormeaux IS, Brown GE. 2020. Disturbance cues function as sources of risk assessment information under natural conditions. Freshwater Biology, 65(5): 981–986.",
+  "1.", "Goldman JA*, Feyten LEA, Ramnarine IW, Brown GE. 2020. Sender and receiver experience with risk alters the response to disturbance cues by Trinidadian guppies. Current Zoology, 66(3): 255–261."
+) |>
+  brief_entries(
+    what = citation,
+    when = number
+  )
+```
+
+# Presentations
+
+```{r presentations}
+tribble(
+  ~number, ~details, ~year,
+    "", "The impact of spruce budworm defoliation legacies on wildfire burn severity and post-fire recovery. Wildfire Canada" , "2026",
+  "12.", "Comparing forest recovery trajectories following wildfire in the presence and absence of spruce budworm defoliation using remotely sensed data. IALE-North America Annual Meeting, Oklahoma City, Oklahoma.", "2024",
+  "11.", "The effects of snowmelt timing on wildfire burn severity in the boreal forest. IALE-North America Annual Meeting, Riverside, California.", "2023",
+  "10.", "Time-lagged and cumulative effects of moisture availability on burn severity in the boreal forest. Wildland Fire Canada Conference, Edmonton, AB.", "2022",
+  "9.",  "Trends in burn severity across an east-west gradient. Ecological Society of America Annual Meeting, Montreal, QC.", "2022",
+  "8.",  "Spatial and temporal trends in landscape patterns of burn severity in the boreal shield ecozone of Ontario. North American Forest Ecology Workshop (virtual).", "2022"
+) |>
+  brief_entries(
+    what = details,
+    when = year
+  )
+```
+
+# Scholarships & Awards
+
+```{r awards}
+tribble(
+  ~award, ~dates,
+  "School of Graduate Studies Doctoral Completion Award",                "2024–-2025",
+  "Queen Elizabeth II Graduate Scholarship in Science and Technology",   "2023–-2024",
+  "North American Forest Ecology Workshop Student Presentation Award – 3rd Place", "2022",
+  "Edward H. Buckley and Grace B. Buckley Graduate Scholarship in Forestry", "2020–-2021",
+  "GSEF – Faculty of Forestry Award",                                    "2020–-2021",
+  "Louis J. Nozzollilo Fellowship in Forestry Research",                 "2020–-2021",
+  "NSERC Postgraduate Scholarship Doctoral",                             "2020–-2023"
+) |>
+  brief_entries(
+    what = award,
+    when = dates
+  )
+```
+
+# Teaching
+
+```{r teaching}
+tribble(
+  ~course, ~role, ~institution, ~year,
+  "FOR3012: Analytical Methods in Forestry – Statistics (graduate)", "Teaching Assistant", "University of Toronto", "2023",
+  "BIO120: Adaptation and Biodiversity",                             "Teaching Assistant", "University of Toronto", "2020",
+  "BIOL 4259/9915: Research Hypothesis Testing (undergrad/grad)",    "Teaching Assistant", "Concordia University",  "2019",
+  "BIOL 227: Laboratory Studies of Organisms",                       "Teaching Assistant", "Concordia University",  "2018",
+  "BIOL 201: Introductory Biology",                                  "Teaching Assistant", "Concordia University",  "2017"
+) |>
+  detailed_entries(
+    what = course,
+    when = year,
+    with = institution,
+    where = role
+  )
+```
+
+# Lectures & Workshops
+
+```{r lectures}
+tribble(
+  ~title, ~venue, ~year,
+  "Harnessing The Power of Google Earth Engine with Python", "University of Toronto", "2025",
+  "Multivariate Analysis and Ordination",          "University of Toronto", "2023"
+) |>
+  brief_entries(
+    what = title,
+    when = year,
+    with = venue
+  )
+```
+
+# Professional Development
+
+```{r profdev}
+tribble(
+  ~title, ~venue, ~year,
+  "Short Course on Forecasting for Decision-Making: An Epidemiological & Ecological Perspective (Invited)",
+    "Canadian Ecological Forecasting Initiative & Fields Institute, University of Toronto", "2023",
+  "Structural Equation Modelling Summer School",
+    "Université de Sherbrooke", "2023"
+) |>
+  brief_entries(
+    what = title,
+    when = year,
+    with = venue
+  )
+```
+
+# Skills & Tools
+
+```{r skills}
+tribble(
+  ~category, ~detail,
+  "Programming:",   "R, Python, JavaScript, bash",
+  "Project Management:",  "git, uv, uvr, Quarto",
+  "Data Management:", "duckDB, PostgreSQL", 
+  "GIS:", "Google Earth Engine, QGIS, ArcPy" 
+    
+ ) |>
+  brief_entries(
+    what = detail,
+    when = category
+  )
+```
