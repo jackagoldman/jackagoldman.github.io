@@ -95,21 +95,21 @@
     "href": "goldman_cv.html#in-preparation",
     "title": "Current Position",
     "section": "In Preparation",
-    "text": "In Preparation\n\n\n# A tibble: 4 × 3\n  what                                                               when  with \n  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;\n1 **Goldman JA**, Fortin MJ, James PMA. Integrating data from multi… \"\"    &lt;NA&gt; \n2 Millard K, Pelletier N, Thompson DK, **Goldman JA**, Pontone N, G… \"\"    &lt;NA&gt; \n3 Wilkinson SL, **Goldman JA**, Krieger-Pottruff E, James PMA.       \"\"    &lt;NA&gt; \n4 **Goldman JA**. Combining propensity score matching and causal fo… \"\"    &lt;NA&gt;"
+    "text": "In Preparation\n#| output: asis\n\ntribble(\n ~number,  ~citation,\n\"13.\", \"Millard K, \\\\textbf{Goldman JA}, Pelletier N, Thompson DK, Pontone N, Guindon L. Severe droughts are putting Canadian peatland carbon stocks at risk: an analysis of fire selectivity and behavior in peatlands over the extreme 2023 fire season.\",\n    \n\"12.\", \"Wilkinson SL, Leverkus S, \\\\textbf{Goldman JA}, Butchart C, Flannigan M. Multi-year overwintering fires in Boreal Canada.\" ,  \n    \n\"11.\", \"Wilkinson SL, Goldman JA*, Krieger-Pottruff E, James PMA. Legacies of mountain pine beetle defoliation influences burn severity in western Canada\",\n    \n\"10.\", \"Goldman JA*, Fortin MJ, James PMA. The impact of spruce budworm defoliation legacies on wildfire burn severity and post-fire recovery.\"\n) |&gt;\n  baretable()"
   },
   {
     "objectID": "goldman_cv.html#in-review",
     "href": "goldman_cv.html#in-review",
     "title": "Current Position",
     "section": "In Review",
-    "text": "In Review\n\n\n# A tibble: 1 × 3\n  what                                                               when  with \n  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;\n1 Goldman JA, Fortin MJ, James PMA. Within and among year moisture … \"\"    &lt;NA&gt;"
+    "text": "In Review\n\n\n# A tibble: 1 × 3\n  what                                                               when  with \n  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;\n1 Goldman JA*, Fortin MJ, James PMA. Within and among year moisture… 9.    &lt;NA&gt;"
   },
   {
     "objectID": "goldman_cv.html#published",
     "href": "goldman_cv.html#published",
     "title": "Current Position",
     "section": "Published",
-    "text": "Published\n\n\n# A tibble: 7 × 3\n  what                                                               when  with \n  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;\n1 Goldman JA, Fortin MJ, James PMA. 2025. Snow dynamics and forest … 7.    &lt;NA&gt; \n2 Messaoud Y, Reid A, Tchebakova NM, Goldman JA, & Hofgaard A. 2022… 6.    &lt;NA&gt; \n3 Crane AL, Bairos-Novak KR, Goldman JA, Brown GE. 2022. Chemical d… 5.    &lt;NA&gt; \n4 Goldman JA, Crane AL, Feyten LEA, Collins E, Brown GE. 2022. Dist… 4.    &lt;NA&gt; \n5 Brown GE, Demers EM, Goldman JA, Singh A, Chivers DP, Ferrari MCO… 3.    &lt;NA&gt; \n6 Goldman JA, Desormeaux IS, Brown GE. 2020. Disturbance cues funct… 2.    &lt;NA&gt; \n7 Goldman JA, Feyten LEA, Ramnarine IW, Brown GE. 2020. Sender and … 1.    &lt;NA&gt;"
+    "text": "Published\n\n\n# A tibble: 8 × 3\n  what                                                               when  with \n  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;\n1 Goldman JA*, Fortin MJ, James PMA. 2025. Snow dynamics and forest… 8.    &lt;NA&gt; \n2 Messaoud Y, Reid A, Tchebakova NM, Goldman JA*, & Hofgaard A. 202… 7.    &lt;NA&gt; \n3 Crane AL, Bairos-Novak KR, Goldman JA*, Brown GE. 2022. Chemical … 6.    &lt;NA&gt; \n4 Goldman JA*, Crane AL, Feyten LEA, Collins E, Brown GE. 2022. Dis… 5.    &lt;NA&gt; \n5 Brown GE, Demers EM, **Goldman JA*, Singh A, Chivers DP, Ferrari … 4.    &lt;NA&gt; \n6 Goldman JA*, Desormeaux IS, Brown GE. 2020. Disturbance cues func… 3.    &lt;NA&gt; \n7 Goldman JA*, Feyten LEA, Ramnarine IW, Brown GE. 2020. Sender and… 2.    &lt;NA&gt; \n8 Goldman JA, Singh A, Demers EM, Feyten LEA, Brown GE. (2019) Does… 1.    &lt;NA&gt;"
   },
   {
     "objectID": "publications/index.html",

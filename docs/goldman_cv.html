@@ -126,6 +126,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#current-position" id="toc-current-position" class="nav-link active" data-scroll-target="#current-position">Current Position</a></li>
+  <li><a href="#work-experience" id="toc-work-experience" class="nav-link" data-scroll-target="#work-experience">Work Experience</a></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
   <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a>
   <ul class="collapse">
@@ -173,6 +174,10 @@ ul.task-list li input[type="checkbox"] {
 <h1>Current Position</h1>
 
 </section>
+<section id="work-experience" class="level1">
+<h1>Work Experience</h1>
+
+</section>
 <section id="education" class="level1">
 <h1>Education</h1>
 
@@ -181,17 +186,19 @@ ul.task-list li input[type="checkbox"] {
 <h1>Publications</h1>
 <section id="in-preparation" class="level2">
 <h2 class="anchored" data-anchor-id="in-preparation">In Preparation</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 4 × 3
-  what                                                               when  with 
-  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;
-1 **Goldman JA**, Fortin MJ, James PMA. Integrating data from multi… ""    &lt;NA&gt; 
-2 Millard K, Pelletier N, Thompson DK, **Goldman JA**, Pontone N, G… ""    &lt;NA&gt; 
-3 Wilkinson SL, **Goldman JA**, Krieger-Pottruff E, James PMA.       ""    &lt;NA&gt; 
-4 **Goldman JA**. Combining propensity score matching and causal fo… ""    &lt;NA&gt; </code></pre>
-</div>
-</div>
+<pre class="{#| label: pub-inprep}"><code>#| output: asis
+
+tribble(
+ ~number,  ~citation,
+"13.", "Millard K, \\textbf{Goldman JA}, Pelletier N, Thompson DK, Pontone N, Guindon L. Severe droughts are putting Canadian peatland carbon stocks at risk: an analysis of fire selectivity and behavior in peatlands over the extreme 2023 fire season.",
+    
+"12.", "Wilkinson SL, Leverkus S, \\textbf{Goldman JA}, Butchart C, Flannigan M. Multi-year overwintering fires in Boreal Canada." ,  
+    
+"11.", "Wilkinson SL, Goldman JA*, Krieger-Pottruff E, James PMA. Legacies of mountain pine beetle defoliation influences burn severity in western Canada",
+    
+"10.", "Goldman JA*, Fortin MJ, James PMA. The impact of spruce budworm defoliation legacies on wildfire burn severity and post-fire recovery."
+) |&gt;
+  baretable()</code></pre>
 </section>
 <section id="in-review" class="level2">
 <h2 class="anchored" data-anchor-id="in-review">In Review</h2>
@@ -200,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <pre><code># A tibble: 1 × 3
   what                                                               when  with 
   &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;
-1 Goldman JA, Fortin MJ, James PMA. Within and among year moisture … ""    &lt;NA&gt; </code></pre>
+1 Goldman JA*, Fortin MJ, James PMA. Within and among year moisture… 9.    &lt;NA&gt; </code></pre>
 </div>
 </div>
 </section>
@@ -208,16 +215,17 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="published">Published</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 7 × 3
+<pre><code># A tibble: 8 × 3
   what                                                               when  with 
   &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;
-1 Goldman JA, Fortin MJ, James PMA. 2025. Snow dynamics and forest … 7.    &lt;NA&gt; 
-2 Messaoud Y, Reid A, Tchebakova NM, Goldman JA, &amp; Hofgaard A. 2022… 6.    &lt;NA&gt; 
-3 Crane AL, Bairos-Novak KR, Goldman JA, Brown GE. 2022. Chemical d… 5.    &lt;NA&gt; 
-4 Goldman JA, Crane AL, Feyten LEA, Collins E, Brown GE. 2022. Dist… 4.    &lt;NA&gt; 
-5 Brown GE, Demers EM, Goldman JA, Singh A, Chivers DP, Ferrari MCO… 3.    &lt;NA&gt; 
-6 Goldman JA, Desormeaux IS, Brown GE. 2020. Disturbance cues funct… 2.    &lt;NA&gt; 
-7 Goldman JA, Feyten LEA, Ramnarine IW, Brown GE. 2020. Sender and … 1.    &lt;NA&gt; </code></pre>
+1 Goldman JA*, Fortin MJ, James PMA. 2025. Snow dynamics and forest… 8.    &lt;NA&gt; 
+2 Messaoud Y, Reid A, Tchebakova NM, Goldman JA*, &amp; Hofgaard A. 202… 7.    &lt;NA&gt; 
+3 Crane AL, Bairos-Novak KR, Goldman JA*, Brown GE. 2022. Chemical … 6.    &lt;NA&gt; 
+4 Goldman JA*, Crane AL, Feyten LEA, Collins E, Brown GE. 2022. Dis… 5.    &lt;NA&gt; 
+5 Brown GE, Demers EM, **Goldman JA*, Singh A, Chivers DP, Ferrari … 4.    &lt;NA&gt; 
+6 Goldman JA*, Desormeaux IS, Brown GE. 2020. Disturbance cues func… 3.    &lt;NA&gt; 
+7 Goldman JA*, Feyten LEA, Ramnarine IW, Brown GE. 2020. Sender and… 2.    &lt;NA&gt; 
+8 Goldman JA, Singh A, Demers EM, Feyten LEA, Brown GE. (2019) Does… 1.    &lt;NA&gt; </code></pre>
 </div>
 </div>
 </section>
@@ -226,14 +234,15 @@ ul.task-list li input[type="checkbox"] {
 <h1>Presentations</h1>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 5 × 3
+<pre><code># A tibble: 6 × 3
   what                                                               when  with 
   &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;
-1 Comparing forest recovery trajectories following wildfire in the … 2024  &lt;NA&gt; 
-2 The effects of snowmelt timing on wildfire burn severity in the b… 2023  &lt;NA&gt; 
-3 Time-lagged and cumulative effects of moisture availability on bu… 2022  &lt;NA&gt; 
-4 Trends in burn severity across an east-west gradient. Ecological … 2022  &lt;NA&gt; 
-5 Spatial and temporal trends in landscape patterns of burn severit… 2022  &lt;NA&gt; </code></pre>
+1 The impact of spruce budworm defoliation legacies on wildfire bur… 2026  &lt;NA&gt; 
+2 Comparing forest recovery trajectories following wildfire in the … 2024  &lt;NA&gt; 
+3 The effects of snowmelt timing on wildfire burn severity in the b… 2023  &lt;NA&gt; 
+4 Time-lagged and cumulative effects of moisture availability on bu… 2022  &lt;NA&gt; 
+5 Trends in burn severity across an east-west gradient. Ecological … 2022  &lt;NA&gt; 
+6 Spatial and temporal trends in landscape patterns of burn severit… 2022  &lt;NA&gt; </code></pre>
 </div>
 </div>
 </section>
@@ -274,10 +283,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 3
-  what                                                    when  with 
-  &lt;chr&gt;                                                   &lt;chr&gt; &lt;chr&gt;
-1 Harnessing The Power of Google Earth Engine with Python 2025  &lt;NA&gt; 
-2 Multivariate Analysis and Ordination — FOR3012          2023  &lt;NA&gt; </code></pre>
+  what                                                    when  with            
+  &lt;chr&gt;                                                   &lt;chr&gt; &lt;chr&gt;           
+1 Harnessing The Power of Google Earth Engine with Python 2025  University of T…
+2 Multivariate Analysis and Ordination                    2023  University of T…</code></pre>
 </div>
 </div>
 </section>
@@ -288,8 +297,8 @@ ul.task-list li input[type="checkbox"] {
 <pre><code># A tibble: 2 × 3
   what                                                               when  with 
   &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;
-1 Short Course on Forecasting for Decision-Making: An Epidemiologic… 2023  &lt;NA&gt; 
-2 Structural Equation Modelling Summer School                        2023  &lt;NA&gt; </code></pre>
+1 Short Course on Forecasting for Decision-Making: An Epidemiologic… 2023  Cana…
+2 Structural Equation Modelling Summer School                        2023  Univ…</code></pre>
 </div>
 </div>
 </section>
@@ -298,12 +307,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
-  what                                                               when  with 
-  &lt;chr&gt;                                                              &lt;chr&gt; &lt;chr&gt;
-1 R + RStudio, JavaScript + Google Earth Engine, Python + JupyterLab Lang… &lt;NA&gt; 
-2 git + GitHub, project-oriented workflows (RProjects), RMarkdown, … Work… &lt;NA&gt; 
-3 Structural equation modelling, machine learning (XGBoost), spatia… Stat… &lt;NA&gt; 
-4 Image acquisition, advanced image processing, supervised classifi… Remo… &lt;NA&gt; </code></pre>
+  what                             when                with 
+  &lt;chr&gt;                            &lt;chr&gt;               &lt;chr&gt;
+1 R, Python, JavaScript, bash      Programming:        &lt;NA&gt; 
+2 git, uv, uvr, Quarto             Project Management: &lt;NA&gt; 
+3 duckDB, PostgreSQL               Data Management:    &lt;NA&gt; 
+4 Google Earth Engine, QGIS, ArcPy GIS:                &lt;NA&gt; </code></pre>
 </div>
 </div>
 
