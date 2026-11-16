@@ -27,7 +27,7 @@ height: 100%
 
 # Welcome!
 
-I am a quantitative ecologist with expertise in remote sensing and big data, focused on monitoring natural disturbance, ecosystem dynamics, and cross-ecosystem disturbance interactions. I develop and apply computational and spatial analytical tools to track landscape change at scale, uncovering the drivers and consequences of disturbance across ecosystems.
+I am a quantitative fire ecologist who studies where, when, and why fires burn, and what they mean for ecosystems. Using remote sensing and large observational datasets, I track fire and other natural disturbances across landscapes and look at how they interact across ecosystems. My central aim is to give ecological meaning to observational data. My research is focused on developing frameworks and combining methods from different fields to connect the patterns we observe to the processes that drive them.
 
 Currently, I am a postdoctoral research fellow in the Geomatics Spatio-Temporal Analysis & Remote Sensing Lab \@ Carleton University.
 
