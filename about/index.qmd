@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I am a quantitative ecologist with expertise in remote sensing and big data, broadly interested in how natural disturbances shape ecosystems and how those effects ripple across ecological boundaries. My research draws on satellite imagery, airborne LiDAR, and large-scale environmental datasets to monitor and model ecosystem dynamics, with a focus on developing scalable approaches that bridge fine-resolution forest monitoring and broad, landscape-level inference.
+I am a quantitative fire ecologist with expertise in remote sensing and big data, broadly interested in how natural disturbances shape ecosystems and how those effects ripple across ecological boundaries. My research draws on satellite imagery, airborne LiDAR, and large-scale environmental datasets to monitor and model ecosystem dynamics, with a focus on developing scalable approaches that bridge fine-resolution forest monitoring and broad, landscape-level inference.
 
 My path to disturbance ecology began in aquatic systems, where I developed a foundation in ecological dynamics through work on predator-prey interactions and the conservation of juvenile Pacific salmon. These early experiences instilled a deep appreciation for how populations and ecosystems respond to environmental change, a thread that continues to run through my work today.
 
