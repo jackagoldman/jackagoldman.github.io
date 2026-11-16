@@ -1,0 +1,300 @@
+% =============================================================================
+%  Curriculum Vitae: Jack A. Goldman
+%  Build:  latexmk          (uses .latexmkrc -> XeLaTeX)
+%     or:  make
+%     or:  xelatex goldman_cv.tex
+%  Fonts:  EB Garamond (SIL OFL), bundled in ./fonts so the build does not
+%          depend on what is installed on the machine.
+% =============================================================================
+\documentclass[11pt]{article}
+
+% ---- Page --------------------------------------------------------------------
+\usepackage[letterpaper, left=1.6cm, right=1.6cm, top=1.5cm, bottom=1.6cm]{geometry}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\frenchspacing
+
+% ---- Fonts -------------------------------------------------------------------
+\usepackage{fontspec}
+\setmainfont{EBGaramond}[
+  Path           = fonts/,
+  Extension      = .otf,
+  UprightFont    = *-Regular,
+  ItalicFont     = *-Italic,
+  BoldFont       = *-Bold,
+  BoldItalicFont = *-BoldItalic,
+  Numbers        = Lining,
+  Ligatures      = TeX
+]
+\renewcommand{\large}{\fontsize{12.5}{15}\selectfont}
+
+% ---- Packages ----------------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{xltabular}   % tabularx that can break across pages
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+% ---- Section headings: rule above, bold caps -------------------------------------
+\titleformat{\section}
+  {\titlerule[0.5pt]\vspace{3pt}\fontsize{16}{19}\selectfont\bfseries}
+  {}{0pt}{\MakeUppercase}
+\titlespacing*{\section}{0pt}{6pt}{6pt}
+
+% ---- Lists: small square bullets ---------------------------------------------
+\newcommand{\sqbullet}{\rule[0.28ex]{0.36em}{0.36em}}
+\setlist[itemize]{label=\sqbullet, leftmargin=2.1em, labelsep=1.2em,
+                  itemsep=1pt, parsep=0pt, topsep=2pt}
+\setlist[enumerate]{leftmargin=2.1em, itemsep=3pt, parsep=0pt, topsep=2pt}
+
+% ---- Tables (rows of: item ... date) -----------------------------------------
+%  Every table shares the same date column, so dates line up down the page.
+\newlength{\datecol}\setlength{\datecol}{4.0cm}
+\newcolumntype{D}{>{\raggedright\arraybackslash}p{\datecol}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}p{1.2cm}}   % year flush with the right margin
+\renewcommand{\arraystretch}{1.08}
+
+%  \begin{cvtable}{<column spec ending in D>} ... \end{cvtable}
+\newcount\awardsum \newcount\awardbase
+\newenvironment{cvtable}[1]
+  {\par\noindent\global\awardbase=\awardsum\relax
+   \setlength{\LTpre}{0pt}\setlength{\LTpost}{0pt}%
+   \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}%
+   \xltabular{\linewidth}{@{}#1@{}}}
+  {\endxltabular\par}
+
+%  Detail line under a table row (spans everything except the date column)
+\newcommand{\detail}[1]{%
+  \multicolumn{3}{@{\hspace{1.2em}}>{\raggedright\arraybackslash\small}p{\dimexpr\linewidth-\datecol-2\tabcolsep-1.2em\relax}}{#1} & \\}
+
+
+% ---- Scholarships & awards: amount column with automatic total ---------------
+\usepackage{siunitx}
+\sisetup{group-separator={,}, group-minimum-digits=4}
+\newlength{\amtcol}\setlength{\amtcol}{1.6cm}
+\newcolumntype{A}{>{\raggedright\arraybackslash}p{\dimexpr\datecol-\amtcol-2\tabcolsep\relax}}
+\newcolumntype{M}{>{\raggedleft\arraybackslash}p{\amtcol}}
+% tabularx typesets its body several times while measuring column widths,
+% so each awards table starts its body with \awardstart, which rewinds the
+% running total to its value before the table began.
+\newcommand{\awardstart}{\global\awardsum=\awardbase\relax}
+% \award{name}{years}{amount}  -> prints $amount and adds it to the total
+% \awardtext{name}{years}{text} -> prints text (e.g. Declined); not counted
+\newcommand{\award}[3]{#1 & #2 & \$\num{#3}\global\advance\awardsum by #3\relax \\}
+\newcommand{\awardtext}[3]{#1 & #2 & #3 \\}
+\newcommand{\awardtotal}{\underline{\$\num{\the\awardsum}}}
+
+% ---- Reverse numbering (oldest = 1, most recent = highest) --------------------
+\usepackage{totcount}       % remembers list lengths between runs (via .aux)
+\newtotcounter{pubtotal}
+% enumitem counter style: label=\revnum* numbers from the total down to 1
+\makeatletter
+\newcommand{\revnum}[1]{\expandafter\@revnum\csname c@#1\endcsname}
+\newcommand{\@revnum}[1]{\number\numexpr\totvalue{pubtotal}+1-#1\relax}
+\makeatother
+\AddEnumerateCounter{\revnum}{\@revnum}{99}
+\newtotcounter{presidx}
+\newcolumntype{Q}{>{\raggedleft\arraybackslash}p{1.6em}@{\hspace{0.5em}}}  % text starts 2.1em in, like the lists
+% \presstart rewinds the count (xltabular typesets its body more than once)
+\newcommand{\presstart}{\setcounter{presidx}{0}}
+\newcommand{\pres}[2]{\stepcounter{presidx}%
+  \the\numexpr\totvalue{presidx}-\value{presidx}+1\relax. & #1 & #2 \\}
+
+% ---- Little helpers ------------------------------------------------------------
+\newcommand{\me}[1]{\textbf{#1}}                         % bold own name
+% underlined link, rule at a fixed depth so all underlines line up
+\newcommand{\cvlink}[2]{\href{#1}{\setbox0\hbox{#2}\rlap{\rule[-0.35ex]{\wd0}{0.45pt}}\box0}}
+\newcommand{\sub}[1]{\par\vspace{4pt}\textit{#1}\par\nopagebreak\vspace{1pt}\nopagebreak}
+\newcommand{\dash}{\,--\,}
+
+% =============================================================================
+%  Personal details (edit here)
+% =============================================================================
+\newcommand{\cvname}{Jack A. Goldman}
+\newcommand{\cvemail}{jackgoldman@cunet.carleton.ca}
+\newcommand{\cvweb}{jackagoldman.github.io}
+\newcommand{\cvgithub}{github.com/jackagoldman}
+
+\begin{document}
+
+% =============================================================================
+%  Header
+% =============================================================================
+\begin{minipage}[c]{0.56\linewidth}
+  \mbox{\fontsize{29}{34}\selectfont\bfseries\MakeUppercase{\cvname}}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.40\linewidth}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabular}{@{}l@{\hspace{1.3em}}l@{}}
+    Position & Postdoctoral Research Fellow \\
+             & Carleton University, Ottawa, ON \\[5pt]
+    E-mail   & \cvlink{mailto:\cvemail}{\cvemail} \\
+    Website  & \cvlink{https://\cvweb}{\cvweb} \\
+    GitHub   & \cvlink{https://\cvgithub}{\cvgithub} \\
+  \end{tabular}
+\end{minipage}
+
+\vspace{8pt}
+
+% =============================================================================
+\section{Education}
+% =============================================================================
+\begin{cvtable}{p{1.9cm} p{5.6cm} L D}
+  PhD & Forestry and Conservation & University of Toronto & 2020\dash 2026 \\
+  \detail{Institute of Forestry and Conservation, Daniels Faculty of Architecture, Landscape, and Design.
+          Supervisors: Dr.~Patrick M.A.~James and Dr.~Marie-Josée Fortin.\newline
+          Thesis: \textit{How biotic and abiotic environmental variability shapes wildfire burn severity in Ontario's boreal forest}}
+  \noalign{\vspace{3pt}}
+  MSc & Biology & Concordia University & 2017\dash 2019 \\
+  \detail{Supervisor: Dr.~Grant E.~Brown.\newline
+          Thesis: \textit{Disturbance cues as a source of risk assessment information: effects of sender identity and experience with risk on the response of Trinidadian guppies (}Poecilia reticulata\textit{)}}
+  \noalign{\vspace{3pt}}
+  BSc, \textit{Hons.} & Forest Conservation Science & University of Toronto & 2013\dash 2017 \\
+  \detail{With Distinction. Minors in Environmental Biology and Environmental Studies. Supervisor: Dr.~Jay R.~Malcolm.\newline
+          Thesis: \textit{Can edge effects of forest fragments be quantified from satellite data?}}
+\end{cvtable}
+
+% =============================================================================
+\section{Professional and Academic Experience}
+% =============================================================================
+\begin{cvtable}{p{5.6cm} p{4.6cm} L D}
+  Postdoctoral Research Fellow & Carleton University    & Prof.~Millard  & 2025\dash present \\
+  Research Associate           & Carleton University    & Prof.~Millard  & 2024\dash 2025 \\
+  Research Assistant           & University of Toronto  & Prof.~Malcolm  & 2017 \\
+  Research Assistant           & University of Toronto  & Prof.~Krkosek  & 2016 \\
+\end{cvtable}
+
+% =============================================================================
+\section{Research Interests}
+% =============================================================================
+Fire ecology; Pyrogeography; Landscape ecology; Remote sensing; Ecological modelling; Causal inference.
+
+% =============================================================================
+\section{Scholarships and Awards}
+% =============================================================================
+%  \award{<name>}{<years>}{<amount in whole dollars, no commas>}
+%  \awardtext{<name>}{<years>}{<text>}  for entries without an amount.
+%  The total at the bottom is summed automatically.
+\sub{Scholarships}
+\begin{cvtable}{L A M}
+  \awardstart
+  \award{School of Graduate Studies Doctoral Completion Award}{2024\dash 2025}{12000}
+  \award{Queen Elizabeth II Graduate Scholarship in Science and Technology}{2023\dash 2024}{15000}
+  \award{Edward H.~Buckley and Grace B.~Buckley Graduate Scholarship in Forestry}{2020\dash 2021}{1265}
+  \award{Louis J.~Nozzollilo Fellowship in Forestry Research}{2020\dash 2021}{2500}
+  \awardtext{Queen Elizabeth II Graduate Scholarship in Science and Technology}{2020\dash 2021}{Declined}
+  \award{NSERC Postgraduate Scholarship -- Doctoral}{2020\dash 2023}{63000}
+  \award{Queen Elizabeth II Graduate Scholarship in Science and Technology}{2019\dash 2020}{15000}
+  \award{Concordia Graduate Scholarship, Natural Sciences and Engineering Research}{2018\dash 2019}{17500}
+  \award{Edward H.~Buckley and Grace B.~Buckley Undergraduate Scholarship in Forestry}{2017}{1000}
+\end{cvtable}
+
+\sub{Awards}
+\begin{cvtable}{L A M}
+  \awardstart
+  \award{North American Forest Ecology Workshop Student Presentation Award -- 3rd Place}{2022}{150}
+  \award{GSEF -- Faculty of Forestry Award}{2020\dash 2021}{2890}
+  \award{Concordia SGS Conference and Exhibition Travel Award}{2019}{1000}
+  \award{Clemens-Rigler Travel Award, CCFFR}{2019}{120}
+  \awardtext{Gerry Fitzgerald Award, Best Poster Presentation at EEEF 2018 (Montréal, Canada)}{2018}{}
+  \award{Concordia Graduate Student Mobility Award}{2018}{1150}
+  \award{Concordia Merit Entrance Award}{2017\dash 2018}{10000}
+  \award{Concordia Out of Province Tuition Award}{2017\dash 2018}{6000}
+  \award{NSERC Undergraduate Summer Research Award (Forestry)}{2017}{4500}
+  \noalign{\vspace{2pt}}
+  & Total & \awardtotal \\
+\end{cvtable}
+
+% =============================================================================
+\section{Teaching Assistant}
+% =============================================================================
+\begin{cvtable}{p{3.4cm} L D}
+  FOR3012          & Analytical Methods in Forestry -- Statistics (graduate) & 2023 \\
+  BIO120           & Adaptation and Biodiversity                            & 2020 \\
+  BIOL 4259/9915   & Research Hypothesis Testing (undergraduate/graduate)    & 2019 \\
+  BIOL 227         & Laboratory Studies of Organisms                         & 2018 \\
+  BIOL 201         & Introductory Biology                                    & 2017 \\
+\end{cvtable}
+
+% =============================================================================
+\section{Lectures and Workshops}
+% =============================================================================
+\begin{cvtable}{L D}
+  Harnessing the Power of Google Earth Engine with Python, University of Toronto & 2025 \\
+  Multivariate Analysis and Ordination, FOR3012, University of Toronto           & 2023 \\
+\end{cvtable}
+
+% =============================================================================
+\section{Professional Development}
+% =============================================================================
+\begin{cvtable}{L D}
+  Short Course on Forecasting for Decision-Making: An Epidemiological \& Ecological Perspective.
+  Canadian Ecological Forecasting Initiative \& Fields Institute, University of Toronto (\textit{invited}) & 2023 \\
+  Structural Equation Modelling Summer School, Université de Sherbrooke & 2023 \\
+\end{cvtable}
+
+% =============================================================================
+\section{Skill Set}
+% =============================================================================
+\begin{itemize}
+  \item \textbf{Languages and environments:} R + RStudio, JavaScript + Google Earth Engine, Python + JupyterLab
+  \item \textbf{Workflows and collaboration:} git + GitHub, project-oriented workflows (e.g., Rprojects), R Markdown, Quarto, targets, Slack, PostgreSQL
+  \item \textbf{Statistical methods:} structural equation modelling, machine learning (xgboost), spatial modelling, mixed-effects modelling, multivariate analysis (ordination)
+  \item \textbf{Remote sensing:} image acquisition, advanced image processing, supervised classification, spectral unmixing (all in Google Earth Engine); spectral indices
+\end{itemize}
+
+% =============================================================================
+\section{Publications}
+% =============================================================================
+\sub{Published}
+\begin{enumerate}[label=\revnum*.]
+  \item \me{Goldman JA}, Fortin MJ, James PMA. 2026. Within and among year moisture availability influences wildfire burn severity in the boreal forest. \textit{Fire Ecology} 22: 146. \url{https://doi.org/10.1186/s42408-026-00544-x}
+  \item \me{Goldman JA}, Fortin MJ, James PMA. 2025. Snow dynamics and forest structure interact to increase wildfire burn severity in the boreal forest. \textit{Forest Ecology and Management} 598: 123180. \url{https://doi.org/10.1016/j.foreco.2025.123180}
+  \item Messaoud Y, Reid A, Tchebakova NM, \me{Goldman JA}, Hofgaard A. 2022. The historical complexity of tree height growth dynamic associated with climate change in western North America. \textit{Forests} 13(5): 738.
+  \item Crane AL, Bairos-Novak KR, \me{Goldman JA}, Brown GE. 2022. Chemical disturbance cues in aquatic systems: a review and prospectus. \textit{Ecological Monographs} 92(1): e01487.
+  \item \me{Goldman JA}, Crane AL, Feyten LEA, Collins E, Brown GE. 2022. Disturbance cue communication is shaped by emitter diet and receiver background risk in Trinidadian guppies. \textit{Current Zoology} 68(4): 433--440.
+  \item Brown GE, Demers EM, \me{Goldman JA}, Singh A, Chivers DP, Ferrari MCO. 2020. Unpredictable risk enhances induced neophobia in northern red-bellied dace. \textit{Animal Behaviour} 168: 121--127.
+  \item \me{Goldman JA}, Desormeaux IS, Brown GE. 2020. Disturbance cues function as sources of risk assessment information under natural conditions. \textit{Freshwater Biology} 65(5): 981--986.
+  \item \me{Goldman JA}, Feyten LEA, Ramnarine IW, Brown GE. 2020. Sender and receiver experience with risk alters the response to disturbance cues by Trinidadian guppies. \textit{Current Zoology} 66(3): 255--261.
+  \item \me{Goldman JA}, Singh A, Demers EM, Feyten LEA, Brown GE. 2019. Does donor group size matter? The response of Trinidadian guppies and Convict cichlids to disturbance cues from conspecific and heterospecific donors. \textit{Canadian Journal of Zoology} 97(4): 319--325. \textbf{\textit{Selected as Editor's Choice.}}
+  \setcounter{pubtotal}{\value{enumi}}
+\end{enumerate}
+
+\sub{In review}
+\begin{itemize}
+  \item Wilkinson SL, Leverkus SER, \me{Goldman JA}, Butchart C, Flannigan M. Multi-year overwintering fires in boreal Canada. Submitted to \textit{IOP Env.\ Res.}
+  \item \me{Goldman JA}, Pelletier N, Thompson DK, Pontone N, Wilkinson SL, Guindon L, Millard K. Severe droughts are putting Canadian peatland carbon stocks at risk: an analysis of fire selectivity and behavior in peatlands over the extreme 2023 fire season. Submitted to \textit{Remote Sensing of Environment}.
+\end{itemize}
+
+\sub{In preparation}
+\begin{itemize}
+  \item \me{Goldman JA}, Fortin MJ, James PMA. Spruce budworm defoliation legacies alter wildfire severity and recovery.
+  \item \me{Goldman JA}, Wilkinson SL, Millard K. Scaling UAV lidar-derived aboveground biomass to satellite imagery in peatlands and analogous ecosystems: a review and meta-analysis.
+\end{itemize}
+
+% =============================================================================
+\section{Presentations}
+% =============================================================================
+\begin{cvtable}{Q L Y}
+  \presstart
+  \pres{Scaling UAV lidar-derived aboveground biomass to satellite imagery in peatlands and analogous ecosystems: a review and meta-analysis. \textit{ISPRS Annual Meeting}, Toronto, ON}{2026}
+  \pres{The impact of spruce budworm defoliation on wildfire burn severity and post-fire recovery. \textit{Canada Wildfire Strategic Network}, virtual}{2026}
+  \pres{Comparing forest recovery trajectories following wildfire in the presence and absence of spruce budworm defoliation using remotely sensed data. \textit{IALE-North America Annual Meeting}, Oklahoma City, OK}{2024}
+  \pres{The effects of snowmelt timing on wildfire burn severity in the boreal forest. \textit{IALE-North America Annual Meeting}, Riverside, CA}{2023}
+  \pres{Time-lagged and cumulative effects of moisture availability on burn severity in the boreal forest. \textit{Wildland Fire Canada Conference}, Edmonton, AB}{2022}
+  \pres{Trends in burn severity across and east-west gradient in burn severity. \textit{Ecological Society of America Annual Meeting}, Montréal, QC}{2022}
+  \pres{Spatial and temporal trends in landscape patterns of burn severity in the boreal shield ecozone of Ontario. \textit{North American Forest Ecology Workshop}, virtual}{2022}
+  \pres{Quality over quantity: sender diet quality, but not quantity, shapes the production of disturbance cues. \textit{Canadian Society for Ecology and Evolution}, Fredericton, NB}{2019}
+  \pres{Predation risk experienced by senders and receivers alters the response of Trinidadian guppies to disturbance cues. \textit{Canadian Conference for Fisheries Research}, London, ON}{2019}
+  \pres{Evidence for species-specificity in disturbance cues. \textit{Ecology and Evolutionary Ethology of Fishes (EEEF)}, Montréal, QC. \textbf{\textit{Awarded Best Poster.}}}{2018}
+  \pres{\textit{Concordia Scientific Communication Poster Symposium}, Montréal, QC}{2017}
+  \pres{\textit{University of Toronto Research Opportunity Program Poster Symposium}, Toronto, ON}{2017}
+\end{cvtable}
+
+\end{document}
